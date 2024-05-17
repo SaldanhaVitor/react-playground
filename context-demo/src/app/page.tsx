@@ -1,9 +1,9 @@
 "use client"
 
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { Footer } from "@/app/components/Footer";
+import { Header } from "@/app/components/Header";
 import { PostProvider } from "./contexts/PostContext";
-import { PostList } from "@/components/PostList";
+import { PostList } from "@/app/components/PostList";
 
 export default function Home() {
   return (
