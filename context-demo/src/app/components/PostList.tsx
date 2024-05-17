@@ -1,9 +1,8 @@
-import { PostContext } from "@/app/contexts/PostContext"
+import { usePosts } from "@/app/contexts/PostContext"
 import { PostEnum } from "@/app/reducers/PostReducer"
-import { useContext } from "react"
 
 export const PostList = () => {
-  const postCtx = useContext(PostContext)
+  const postCtx = usePosts()
 
   return (
     <div>

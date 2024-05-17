@@ -1,9 +1,9 @@
-import { PostContext } from "@/app/contexts/PostContext"
+import { usePosts } from "@/app/contexts/PostContext"
 import { PostEnum } from "@/app/reducers/PostReducer";
-import { useContext, useState } from "react"
+import { useState } from "react"
 
 export const Header = () => {
-  const postCtx = useContext(PostContext);
+  const postCtx = usePosts()
 
   const [titleInput, setTitleInput] = useState('')
   const [bodyInput, setBodyInput] = useState('')
